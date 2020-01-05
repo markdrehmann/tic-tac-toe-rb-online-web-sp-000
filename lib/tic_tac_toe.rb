@@ -108,9 +108,9 @@ def winner(board)
     return nil
   else
     if board[index[0]] == "X"
-      return "Way to be, X"
+      return "X"
     else
-      return "Kudos, O"
+      return "O"
     end
   end
 end
