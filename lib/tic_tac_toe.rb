@@ -100,3 +100,17 @@ def over?(board)
     false
   end
 end
+
+def winner(board)
+  index = []
+  index = won?(board)
+  if !index
+    return nil
+  else
+    if board[index[0]] == "X"
+      return "Way to be, X"
+    else
+      return "Kudos, O"
+    end
+  end
+end
